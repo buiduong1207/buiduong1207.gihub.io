@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Create student list with CSS3</title>
+        <style type="text/css">
+            .StudentDetails {display: none}
+            .Student img{
+                width : 150px;
+                height: 150px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 10px #aaa;
+            }
+            .StudentName {font-weight: bold;}
+            .StudentID{font-style: italic;}
+            .StudentID:before {content:"-";}
+            .Student {
+                text-align: center;
+                width: 150px;
+                margin: 0px 20px;
+                float: left;
+                cursor: pointer;
+            }
+            .Student:hover .SudentDetails {display: block;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="Student">
+                <img scr="C:\Users\Admin\Pictures\01.jpg"/>
+                <div class="StudentDetails">
+                    <span class="StudentName">student1</span>
+                    <span class="StudentID">01</span>
+                </div>
+            </div>
+            <div class="Student">
+                <img scr="C:\Users\Admin\Pictures\02.jpg"/>
+                <div class="StudentDetails">
+                    <span class="StudentName">Student2</span>
+                    <span class="StudentID">02</span>
+                </div>
+            </div>
+            <div class="Student">
+                <img scr="C:\Users\Admin\Pictures\03.jpg"/>
+                <div class="StudentDetails">
+                    <span class="StudentName">student3</span>
+                    <span class="StudentID">03</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="txta">
+        <input type="text" id="txtb">
+        <button onclick="alert('txta+txtb')">
+            Tính tổng
+        </button>
+    </body>
+    <script>
+        function tongab() {
+           var txta = document.getElementById('txta').value;
+           var txtb = document.getElementById('txtb').value;
+           if (txta==null|| txta=="" || isNaN(txta)) {
+            txt.document.write("<font color='red'> Bạn phải nhập số</font>");
+            alert("vui lòng nhập số a hợp lệ");
+            return;
+           }
+           if (txtb==null|| txtb=="" || isNaN(txtb)) {
+            txt.document.write("<font color='red'> Bạn phải nhập số</font>");
+            alert("vui lòng nhập số b hợp lệ");
+            return;
+           }
+           var result = parseInt(txta) + parseInt(txtb);
+        }
+    </script>
+</html>
